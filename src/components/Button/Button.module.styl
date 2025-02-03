@@ -1,0 +1,61 @@
+@import "../../index.styl";
+
+.primary
+  buttonStyle(primaryButtonColor)
+
+.medium 
+  buttonSize(paddingButtonMedium, minWidthButtonMedium, maxWidthButtonMedium)
+
+.content {
+  contentButtonStyle()
+}
+
+.button:hover{
+  outline none
+}
+.button:hover .content{
+  buttonStyleHovered()
+}
+
+.button:active{
+  outline none
+}
+.button:active{
+  buttonStylePressed()
+}
+
+.button:focus{
+  buttonStyleFocused()
+}
+
+.button:disabled{
+  buttonStyleDisabled()
+}
+.button:disabled .content{
+  transform none
+}
+
+.animation{
+  buttonAnimationWrapper()
+}
+
+.overlay{
+  overlay()
+}
+
+.shimmer{
+  shimmer()
+  animation shimmer 2s linear infinite 
+}
+
+.hovered{
+  background-color rgba(255, 255, 255, 0.12)
+  animation overlay 0.3s linear
+}
+
+
+
+
+
+
+

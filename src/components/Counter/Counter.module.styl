@@ -1,0 +1,31 @@
+@import "../../index.styl";
+
+.primary
+  counterStyle(primaryCounterColor)
+
+.small 
+  counterSize(widthCounterSmall, heightCounterSmall)
+
+.live_indicator {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.live_indicator .dot, .live_indicator .pulse {
+  position: absolute;
+  border-radius: 999px;
+}
+
+.live_indicator .pulse {
+  animation-name: counter;
+  animation-iteration-count: infinite; 
+  animation-duration: 2s;
+}
+
+.live_indicator .pulse.two {
+  animation-delay: 0.25s;
+}
